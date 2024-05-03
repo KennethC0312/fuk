@@ -55,8 +55,14 @@ public class Saving : Bank
 
         public void deposit(int amount)
         {
-            base.money += amount;
-            Console.WriteLine($"You now have ${base.money} in your bank");
+            for (int i == 3; i>0; i--)
+            {
+                if (base.password_enter() == base.password)
+                {
+                    
+                    break;
+                }
+            }
         }
 
         public void withdrawal(int amount)
