@@ -33,6 +33,18 @@ public class Bank
     {
         return check_pass.Equals(password);
     }
+
+    protected string password_enter()
+    {
+        string passwords = "";
+        var check = Console.ReadKey();
+        while (check.Key != ConsoleKey.enter)
+        {
+            Console.Write('*')
+            passwords += check
+        }
+        return passwords
+    }
 }
 
 public class Saving : Bank
